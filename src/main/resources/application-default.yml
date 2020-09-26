@@ -1,0 +1,21 @@
+spring:
+  password:
+    encoder:
+      secret: estralamorteSW
+      iteration: 33
+      keylength: 256
+      secretkey: PBKDF2WithHmacSHA512
+  jjwt:
+    secret: Cl4ss1c1n3F0rJWTS3cr3tSignatureAlgorithmM0vi3sF0rL1f3512bitsKeySize
+    expiration: 28800
+  elasticsearch:
+    rest:
+      uris: http://localhost:9200
+  data:
+    elasticsearch:
+      client:
+        reactive:
+          endpoints: localhost:9200
+
+initial-import:
+  enabled: false

@@ -1,0 +1,21 @@
+spring:
+  password:
+    encoder:
+      secret: ${ENCODER_SECRET}
+      iteration: ${ENCODER_ITERATION}
+      keylength: ${ENCODER_KEY_LENGTH}
+      secretkey: ${ENCODER_SECRET_KEY}
+    jjwt:
+      secret: ${JJWT_SECRET}
+      expiration: ${JJWT_EXPIRATION}
+  elasticsearch:
+    rest:
+      uris: ${ELASTICSEARCH_REST_URIS}
+  data:
+    elasticsearch:
+      client:
+        reactive:
+          endpoints: ${ELASTICSEARCH_REACTIVE_ENDPOINTS}
+
+initial-import:
+  enabled: ${INITIAL_IMPORT}
