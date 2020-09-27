@@ -184,6 +184,8 @@
 					<excludes>
 						<exclude>**/api/*.*</exclude>
 						<exclude>**/api/**/*.*</exclude>
+						<exclude>**/configuration/*.*</exclude>
+						<exclude>**/configuration/**/*.*</exclude>
 						<exclude>**/domain/*.*</exclude>
 						<exclude>**/domain/**/*.*</exclude>
 						<exclude>**/exception/*.*</exclude>
